@@ -35,7 +35,23 @@ def cajasRotadas(Tcajas):
         Tpilas.append(cajas2)
     return Tpilas
 
-cajas=obtenerCajas()
-cajas2=cajasRotadas(cajas)
+def recursion(lista, px, py):
+    maxTamano = 0
+    for i in range(len(lista)):
+        x, y, z = lista[i]
+        if x > px and y > py:
+            restantes = lista[:i] + lista[i+1:]
+            tSubpila = z + recursion(restantes, x, y)
+            maxTamano = max(maxTamano, tSubpila)
+    return maxTamano
 
-print(cajas2)
+def pilaMasAlta(lista):
+    return recursion(lista, 0, 0)
+
+def recursionFuerzaBruta():
+    cajas=cajasRotadas(obtenerCajas())
+    print(cajas)
+    for i in cajas:
+        print(pilaMasAlta(i))
+
+recursionFuerzaBruta()
