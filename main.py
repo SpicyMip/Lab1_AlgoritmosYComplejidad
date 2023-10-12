@@ -28,23 +28,14 @@ def cajasRotadas(Tcajas):
             x,y,z=cajas
             if (x,y,z) not in cajas2:
                 cajas2.append((x,y,z))
-            newCaja=(x,z,y)
-            if newCaja not in cajas2:     
-                cajas2.append(newCaja)
-            newCaja=(y,z,x)
-            if newCaja not in cajas2:     
-                cajas2.append(newCaja)
-            newCaja=(y,x,z)
-            if newCaja not in cajas2:     
-                cajas2.append(newCaja)
-            newCaja=(z,x,y)
-            if newCaja not in cajas2:     
-                cajas2.append(newCaja)
-            newCaja=(z,y,x)
-            if newCaja not in cajas2:     
-                cajas2.append(newCaja)
+            if (y,z,x) not in cajas2:     
+                cajas2.append((y,z,x))
+            if (z,x,y) not in cajas2:
+                cajas2.append((z,x,y))
         Tpilas.append(cajas2)
     return Tpilas
+
+# Fuerza bruta
 
 def recursion(lista, px, py):
     maxTamano = 0
@@ -63,5 +54,23 @@ def recursionFuerzaBruta():
     cajas=cajasRotadas(obtenerCajas())
     for i in cajas:
         print(pilaMasAlta(i))
+
+# Progrmacion dinamica
+
+def can_stack(caja_1, caja_2):
+    validacion = caja_1[0] < caja_2[0] and caja_1[1] < caja_2[1]
+    return validacion
+
+def max_altura(rotaciones):
+
+    rotaciones.sort(key = lambda caja: (caja[0],caja[1]))
+    cantidad = len(rotaciones)
+    Altura = [0]*cantidad
+
+    for in range(cantidad):
+
+
+# Main
+
 
 recursionFuerzaBruta()
