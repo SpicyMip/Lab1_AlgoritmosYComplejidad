@@ -28,10 +28,21 @@ def cajasRotadas(Tcajas):
             x,y,z=cajas
             if (x,y,z) not in cajas2:
                 cajas2.append((x,y,z))
-            if (y,z,x) not in cajas2:     
-                cajas2.append((y,z,x))
-            if (z,x,y) not in cajas2:
-                cajas2.append((z,x,y))
+            newCaja=(x,z,y)
+            if newCaja not in cajas2:     
+                cajas2.append(newCaja)
+            newCaja=(y,z,x)
+            if newCaja not in cajas2:     
+                cajas2.append(newCaja)
+            newCaja=(y,x,z)
+            if newCaja not in cajas2:     
+                cajas2.append(newCaja)
+            newCaja=(z,x,y)
+            if newCaja not in cajas2:     
+                cajas2.append(newCaja)
+            newCaja=(z,y,x)
+            if newCaja not in cajas2:     
+                cajas2.append(newCaja)
         Tpilas.append(cajas2)
     return Tpilas
 
