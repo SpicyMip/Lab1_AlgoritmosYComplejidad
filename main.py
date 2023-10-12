@@ -50,7 +50,6 @@ def pilaMasAlta(lista):
 
 def recursionFuerzaBruta():
     cajas=cajasRotadas(obtenerCajas())
-    print(cajas)
     for i in cajas:
         print(pilaMasAlta(i))
 
