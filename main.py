@@ -68,7 +68,12 @@ def recursionFuerzaBruta():
 
 # Progrmacion dinamica
 
-def can_stack(caja_1, caja_2):
+def programacionDinamica():
+    cajas=cajasRotadas(obtenerCajas())
+    for i in cajas:
+        print(pilaMasAlta(i))
+
+def stack(caja_1, caja_2):
     validacion = caja_1[0] < caja_2[0] and caja_1[1] < caja_2[1]
     return validacion
 
@@ -78,10 +83,23 @@ def max_altura(rotaciones):
     cantidad = len(rotaciones)
     Altura = [0]*cantidad
 
-    for in range(cantidad):
+    for i in range(cantidad):
+        Altura[i] = rotaciones[i][2]
 
+        for j in range(i):
+            if stack(rotaciones[j],rotaciones[i]):
+                Altura[i] = max(Altura[i], Altura[j] + rotaciones[i][2])
+    
+    return max(Altura)
 
 # Main
 
-
+print("\nFuerza Bruta")
+print("-------------------------------------------------------------")
 recursionFuerzaBruta()
+print("-------------------------------------------------------------")
+print("\nProgrmacion Diamica")
+print("-------------------------------------------------------------")
+programacionDinamica()
+print("-------------------------------------------------------------")
+
