@@ -71,7 +71,7 @@ def recursionFuerzaBruta():
 def programacionDinamica():
     cajas=cajasRotadas(obtenerCajas())
     for i in cajas:
-        print(pilaMasAlta(i))
+        print(max_altura(i))
 
 def stack(caja_1, caja_2):
     validacion = caja_1[0] < caja_2[0] and caja_1[1] < caja_2[1]
