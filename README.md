@@ -8,13 +8,13 @@ Nombre: Martin Eduardo Pino Cornejo
 Rut: 20.559.927-4
 Rol: 202073528-k
 Paralelo: 200
-Rol dentro del equipo: 
+Rol dentro del equipo: Trabajo en ambsa partes de la tarea, enfocandose en el desarrollo de la fuerza bruta.
 
 Nombre: Luciano Alexis Nicolas Yevenes Cotal
 Rut: 20.811.500-6
 Rol: 202173514-3
 Paralelo: 200
-Rol dentro del equipo: 
+Rol dentro del equipo: Trabajo en ambas partes de la tarea, enfocandose en el desarrollo de la programacion dinamica.
 
 Todas las pruebas fueron ejecutadas en Python version 3.11.4
 
