@@ -2,7 +2,7 @@ Nombre: Nicolas Javier Barahona Espoz
 Rut: 21.037.987-8
 Rol: 202173652-2
 Paralelo: 201
-Rol dentro del equipo: Trabajo en mabas partes de la tarea ya que ayudo ta
+Rol dentro del equipo: Trabajo en ambas partes de la tarea, ayudando tanto en el desarrollo de la fuerza bruta como en la programacion dinamica.
 
 Nombre: Martin Eduardo Pino Cornejo
 Rut: 20.559.927-4
