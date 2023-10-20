@@ -1,14 +1,24 @@
+Nombre: Nicolas Javier Barahona Espoz
+Rut: 21.037.987-8
+Rol: 202173652-2
+Paralelo: 201
+Rol dentro del equipo: Trabajo en mabas partes de la tarea ya que ayudo ta
+
 Nombre: Martin Eduardo Pino Cornejo
 Rut: 20.559.927-4
 Rol: 202073528-k
-Paralelo: 201
+Paralelo: 200
+Rol dentro del equipo: 
 
 Nombre: Luciano Alexis Nicolas Yevenes Cotal
 Rut: 20.811.500-6
 Rol: 202173514-3
-Paralelo: 201
+Paralelo: 200
+Rol dentro del equipo: 
 
-Todas las pruebas fueron ejecutadas en gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+Todas las pruebas fueron ejecutadas en Python version 3.11.4
+
+
 
 Especificacion de los archivos:
     -> funciones.h es donde se encuentran cargadas todas las funciones para el correcto funcionamiento de main.c
